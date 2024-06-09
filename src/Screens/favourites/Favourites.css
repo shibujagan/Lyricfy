@@ -1,0 +1,91 @@
+.song-card {
+  display: flex;
+  align-items: center;
+  padding: 40px;
+ 
+  margin: 10px;
+  gap: 50px;
+  flex-wrap: wrap;
+    overflow-y: auto;
+    justify-content: space-between;
+}
+
+.album-cover {
+  position: relative;
+  width: 200px; /* Fixed width, can be adjusted */
+  height: 200px; /* Equal to width to keep aspect ratio */
+padding: 30px;
+
+}
+
+.album-cover img {
+  width: 205px;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the div without being stretched */
+}
+
+.playlist-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.song-info {
+  flex-grow: 1; /* Takes available space */
+}
+
+.song-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.song-description {
+  font-size: 16px;
+  margin: 0;
+  color: aliceblue;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .song-card {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .album-cover,
+  .song-info {
+      width: 100%;
+      text-align: center; /* Center content for mobile */
+  }
+
+  .song-title {
+      font-size: 20px; /* Slightly smaller font on mobile */
+  }
+
+  .song-description {
+      font-size: 14px;
+      color: aliceblue;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+  /* Tablet specific styles if needed */
+  .song-title {
+      font-size: 22px;
+  }
+
+  .song-description {
+      font-size: 15px;
+      color: aliceblue;
+  }
+}
+
+
+.song-card ::-webkit-scrollbar {
+  display: none;
+}

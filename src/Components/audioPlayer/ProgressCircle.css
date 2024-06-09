@@ -1,0 +1,49 @@
+circle {
+    transition: all 1s ease-in-out;
+    transform: rotate(93deg);
+    transform-origin: 50% 50%;
+  }
+
+  image.active {
+    animation: rotation 30s infinite linear;
+    transform-origin: 50% 50%;
+  }
+  
+  .progress-circle {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+ /* Responsive Styles */
+@media (max-width: 768px) {
+  circle {
+    
+    transition: all 1s ease-in-out;
+    transform: rotate(93deg);
+  }
+
+  
+   image.active {
+    animation: rotation 30s infinite linear;
+    transform-origin: 50% 50%;
+    width: 241px;
+    height: 230px;
+  }
+
+  .progress-circle {
+    height: 290px;
+    width: 300px;
+      justify-content: center;
+      align-items: center; /* Slightly smaller font on mobile */
+  }
+
+}

@@ -1,0 +1,42 @@
+.left-player-body {
+    width: 68%;
+    margin-right: 2%;
+    height: 100%;
+  }
+  
+  .right-player-body {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+ /* Media queries for responsive design */
+@media (max-width: 768px) {
+  .right-player-body {
+      width: 50%; /* Increase the width to take more space */
+      height: auto; /* Adjust height to auto for a better fit */
+  }
+  .left-player-body {
+    width: 68%;
+    margin-right: 2%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .right-player-body {
+      width: 100%; /* Utilize full width on smaller screens */
+      height: auto; /* Adjust height to auto for a better fit */
+      margin-top: 10px; /* Add some top margin for spacing */
+  }
+  .left-player-body {
+    width: 68%;
+    margin-right: 2%;
+    height: 55%;
+  }
+}
+  
+

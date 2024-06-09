@@ -1,0 +1,250 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  
+    overflow-y: auto;
+  }
+
+  .header__left {
+    flex: 0.5;
+    display: flex;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    color: gray;
+    align-items: center;
+    margin: 2% auto 3%;
+  }
+  
+  .header__left > input {
+    border: none;
+    width: 100%;
+  }
+
+
+
+  .header__right {
+    display: flex;
+
+    align-items: center;
+    margin: -1% auto 3%;
+    font-size: 16px;
+    font-weight: 800;
+    color: #c4d0e3;
+  }
+
+  .header__right > h4 {
+    margin-left: 10px;
+  }
+
+
+
+
+  .image-control{
+    width: 100px;
+    height: auto;
+  }
+
+
+
+
+
+
+
+  /* src/Search.css */
+
+.search-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  height: 80%;
+  width: 100%;
+  overflow-y: auto;
+
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px 0 0 4px;
+  font-size: 16px;
+}
+
+.search-button {
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-left: none;
+  border-radius: 0 4px 4px 0;
+  background-color: #1DB954;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-button:hover {
+  background-color: #1aa34a;
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+    height: 62%;
+    border-radius: 30px;
+    border-top-right-radius: 0px;
+  overflow-y: auto;
+}
+
+.track, .playlist {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  transition: background-color 0.3s;
+}
+
+.track:hover, .playlist:hover {
+  background-color: #f0f0f0;
+}
+
+.track-image, .playlist-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.track-info, .playlist-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.track-name, .playlist-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.track-artist, .playlist-description {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.icon-search{
+height: 13px;
+width: 42px;
+padding: 2px;
+}
+
+@media (max-width: 480px) {
+  .search-button {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #1DB954;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .header__right {
+    display: flex;
+    margin-top: 34%;
+    align-items: center;
+    margin: -1% auto 3%;
+    font-size: 16px;
+    font-weight: 800;
+    color: #c4d0e3;
+  }
+
+  .header__right > h4 {
+    margin-left: 10px;
+  }
+
+  .search-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    height: 80%;
+    width: 100%;
+    overflow-y: auto;
+  margin-top: 10%;
+  }
+  
+  .search-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .icon-search{
+    height: 13px;
+    width: 42px;
+    padding: 2px;
+    margin-top: 5px;
+    }
+    .results-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+        height: 62%;
+        border-radius: 30px;
+        border-top-right-radius: 0px;
+      overflow-y: auto;
+    }
+    
+    .track, .playlist {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 10px;
+      transition: background-color 0.3s;
+    }
+    
+    .track:hover, .playlist:hover {
+      background-color: #f0f0f0;
+    }
+    
+    .track-image, .playlist-image {
+      width: 50px;
+      height: 50px;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+    
+    .track-info, .playlist-info {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .track-name, .playlist-name {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0;
+    }
+    
+    .track-artist, .playlist-description {
+      font-size: 14px;
+      color: #666;
+      margin: 0;
+    }
+    
+    .icon-search{
+    height: 13px;
+    width: 42px;
+    padding: 2px;
+    }
+}
