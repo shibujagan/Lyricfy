@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Lyricfy/static/css/main.b40b71fe.css",
+    "main.js": "/Lyricfy/static/js/main.757bccc6.js",
+    "index.html": "/Lyricfy/index.html",
+    "main.b40b71fe.css.map": "/Lyricfy/static/css/main.b40b71fe.css.map",
+    "main.757bccc6.js.map": "/Lyricfy/static/js/main.757bccc6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b40b71fe.css",
+    "static/js/main.757bccc6.js"
+  ]
+}
